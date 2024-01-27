@@ -1,1 +1,1 @@
-# FastAPIGeneration
+# FullStackFastAPITemplate
