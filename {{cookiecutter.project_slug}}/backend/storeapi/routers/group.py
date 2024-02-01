@@ -1,7 +1,7 @@
 import logging
 from fastapi import APIRouter
-from app.models.group import Group, GroupIn
-from app.database import group_table, database
+from storeapi.models.group import Group, GroupIn
+from storeapi.database import group_table, database
 
 
 router = APIRouter()

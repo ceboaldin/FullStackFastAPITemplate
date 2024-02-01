@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+databases[aiosqlite]
+python-dotenv
+rich
+asgi-correlation-id
+python-json-logger
+logtail-python
+pydantic-settings

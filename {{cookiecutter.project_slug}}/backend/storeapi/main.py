@@ -4,10 +4,10 @@ from contextlib import asynccontextmanager
 from asgi_correlation_id import CorrelationIdMiddleware
 from fastapi import FastAPI, HTTPException
 from fastapi.exception_handlers import http_exception_handler
-from app.database import database
-from app.logging_conf import configure_logging
-from app.routers.post import router as post_router
-from app.routers.group import router as group_router
+from storeapi.database import database
+from storeapi.logging_conf import configure_logging
+from storeapi.routers.post import router as post_router
+from storeapi.routers.group import router as group_router
 
 logger = logging.getLogger(__name__)
 
@@ -30,3 +30,5 @@ app.include_router(group_router)
 async def http_exception_handle_logging(request, exc):
     logger.error(f"HTTPException: {exc.status_code} {exc.detail}")
     return await http_exception_handler(request, exc)
+
+

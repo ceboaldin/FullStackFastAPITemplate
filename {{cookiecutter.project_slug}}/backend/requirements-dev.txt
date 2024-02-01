@@ -1,5 +1,5 @@
-black==24.1.1
-httpx==0.26.0
-isort==5.13.2
-pytest==8.0.0
-ruff==0.1.15
+ruff
+black
+isort
+httpx
+pytest
