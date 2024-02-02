@@ -4,10 +4,10 @@ from contextlib import asynccontextmanager
 from asgi_correlation_id import CorrelationIdMiddleware
 from fastapi import FastAPI, HTTPException
 from fastapi.exception_handlers import http_exception_handler
-from storeapi.database import database
-from storeapi.logging_conf import configure_logging
-from storeapi.routers.post import router as post_router
-from storeapi.routers.group import router as group_router
+from appAPI.database import database
+from appAPI.logging_conf import configure_logging
+from appAPI.routers.post import router as post_router
+from appAPI.routers.group import router as group_router
 
 logger = logging.getLogger(__name__)
 

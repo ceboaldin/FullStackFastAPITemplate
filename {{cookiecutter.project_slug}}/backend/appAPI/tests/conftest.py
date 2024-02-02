@@ -6,8 +6,8 @@ from fastapi.testclient import TestClient
 from httpx import AsyncClient
 
 os.environ["ENV_STATE"] = "test"
-from storeapi.database import database  # noqa: E402
-from storeapi.main import app  # noqa: E402
+from appAPI.database import database  # noqa: E402
+from appAPI.main import app  # noqa: E402
 
 
 @pytest.fixture(scope="session")
