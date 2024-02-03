@@ -8,3 +8,6 @@ asgi-correlation-id
 python-json-logger
 logtail-python
 pydantic-settings
+python-jose
+python-multipart
+passlib[bcrypt]
